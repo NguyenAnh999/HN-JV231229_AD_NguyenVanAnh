@@ -47,7 +47,7 @@ export default function Product() {
   };
 
   const handleMinus = (index) => {
-    if (carts[index].quantity === 0) {
+    if (carts[index].quantity === 1) {
       handleMinusAll(index);
     } else if (carts[index].quantity > carts[index].product.quantity) {
       alert("vượt quá số lượng trong kho");
